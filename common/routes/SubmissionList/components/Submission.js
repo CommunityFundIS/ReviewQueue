@@ -8,7 +8,7 @@ const Submission = ({ submission }) => (
       <Link
         to={`/submissions/${submission.slug}`}
         className={css(styles.title)}
-      > {submission.title} </Link>
+      > {submission.eventTitle} </Link>
     </h3>
   </div>
 )

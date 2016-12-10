@@ -23,7 +23,7 @@ const SubmissionListPage = ({ submissions }) => (
         <h2 className={css(styles.title)}>Loading....</h2>
       </div>}
     {!submissions.isLoading &&
-      submissions.data.map((submission, i) => <Submission key={submission.id} submission={submission} />)}
+      submissions.data.map((submission, i) => <Submission key={i} submission={submission} />)}
   </div>
 )
 

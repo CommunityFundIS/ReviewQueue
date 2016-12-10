@@ -8,7 +8,9 @@ const App = ({ children }) => (
     <Helmet title='Community Fund - Submissions' titleTemplate='%s - Community Fund - Submissions' />
     <h1 className={css(styles.title)}>Submissions</h1>
     <Nav />
-    {children}
+    <main className={css(styles.main)}>
+      {children}
+    </main>
     <footer className={css(styles.footer)}>
       Copyright © 2016 <a className={css(styles.footerLink)} href='http://twitter.com/jaredpalmer' target='_blank'>Foo Barson</a>
     </footer>
@@ -20,7 +22,10 @@ const styles = StyleSheet.create({
     maxWidth: 700,
     color: '#000',
     margin: '2rem auto',
-    padding: '0 1rem'
+    padding: '0 1rem',
+    display: 'flex',
+    minHeight: 'calc(100vh - 4rem)',
+    flexDirection: 'column'
   },
   title: {
     color: '#000',
@@ -28,8 +33,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 56
   },
+  main: {
+    flex: '1'
+  },
   footer: {
-    margin: '4rem auto',
+    margin: '0 auto',
     textAlign: 'center',
     color: '#b7b7b7'
   },
