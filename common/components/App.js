@@ -5,12 +5,12 @@ import { StyleSheet, css } from 'aphrodite'
 
 const App = ({ children }) => (
   <div className={css(styles.root)}>
-    <Helmet title='React Production Starter' titleTemplate='%s - React Production Starter' />
-    <h1 className={css(styles.title)}>React Production Starter</h1>
+    <Helmet title='Community Fund - Submissions' titleTemplate='%s - Community Fund - Submissions' />
+    <h1 className={css(styles.title)}>Submissions</h1>
     <Nav />
     {children}
     <footer className={css(styles.footer)}>
-      Copyright © 2016 <a className={css(styles.footerLink)} href='http://twitter.com/jaredpalmer' target='_blank'>Jared Palmer</a>
+      Copyright © 2016 <a className={css(styles.footerLink)} href='http://twitter.com/jaredpalmer' target='_blank'>Foo Barson</a>
     </footer>
   </div>
 )
